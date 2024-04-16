@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/B18-LiveBeispiele.iml" filepath="$PROJECT_DIR$/B18-LiveBeispiele.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Woche-1/Tag-1/Tag-1.iml" filepath="$PROJECT_DIR$/Woche-1/Tag-1/Tag-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Woche-1/Woche-1.iml" filepath="$PROJECT_DIR$/Woche-1/Woche-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Woche-2/Woche-2.iml" filepath="$PROJECT_DIR$/Woche-2/Woche-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Woche-3/Woche-3.iml" filepath="$PROJECT_DIR$/Woche-3/Woche-3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Woche-4/Woche-4.iml" filepath="$PROJECT_DIR$/Woche-4/Woche-4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Woche-5/Woche-5.iml" filepath="$PROJECT_DIR$/Woche-5/Woche-5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Woche-6/Woche-6.iml" filepath="$PROJECT_DIR$/Woche-6/Woche-6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Woche-7/Woche-7.iml" filepath="$PROJECT_DIR$/Woche-7/Woche-7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Woche-8/Woche-8.iml" filepath="$PROJECT_DIR$/Woche-8/Woche-8.iml" />
+    </modules>
+  </component>
+</project>
