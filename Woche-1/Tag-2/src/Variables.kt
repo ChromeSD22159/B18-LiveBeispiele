@@ -1,5 +1,11 @@
 fun main() {
 
+    var isHappy: Boolean = false
+
+    
+    isHappy = true
+
+
     // var steht für Variable  (eng: "variable")
     // val steht für Konstante (eng: "value")
     val minAlter: Int = 21          // Int = Integer
