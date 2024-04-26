@@ -2,9 +2,16 @@ import farben.*
 
 fun main(){
 
-    println("Wollen sie das vegetarische Menu?")
 
-    var antwort: String = readln()
+    var antwort: String = ""
+
+    while (antwort.isBlank()){
+        println()
+        println("Wollen sie das vegetarische Menu?")
+        antwort = readln()
+    }
+
+//    while(! email.contains('@'))
 
     val vegetarisch: Boolean = antwort.equals("ja", true)
         // antwort.lowercase().contains("ja") && !antwort.lowercase().contains("nein")
