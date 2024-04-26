@@ -8,10 +8,10 @@ fun main(){
            !  !  !    
     """.trimIndent()
 
-    println("$BOXED\u001B[31m$flugzeugArt$reset")
+    println("$BOXED\u001B[32m$flugzeugArt$reset")
 
     val beispiel = """
-        Das hier ist ${rot}rot${reset} mit ${rotBack}${gelb}rotem Hintergrund${reset}. 
+        Das hier ist ${rot}rot${reset} mit ${rotBack}rotem Hintergrund${reset}. 
         Jetzt ist wieder alles normal.
         
         $gruen WOW ein grüner Text!$reset
