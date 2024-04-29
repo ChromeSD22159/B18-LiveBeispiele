@@ -1,9 +1,17 @@
 
 fun main(){
     // Ein Paar erstellen
-    val ehePaar: Pair<String, String> = "Brad Pitt" to "Jennifer Anniston"
-    val ehePaar2: Pair<String, String> = Pair("Brad Pitt", "Angie Jolie")
-    var productMitPreis = Pair("Apfel", 0.44)
+    val ehePaar: Pair<String, String> = "Brad Pitt" to "Jennifer Anniston"  // Variante A
+    val ehePaar2: Pair<String, String> = Pair("Brad Pitt", "Angie Jolie")   // Variante B
+    var productMitPreis: Pair<String, Double> = Pair("Apfel", 0.44)
+
+    val productSortiment: List<Pair<String, Double>> = listOf(
+        Pair("Apfel", 0.44),
+        Pair("Banane", 0.5),
+        "Zitrone" to 0.3
+    )
+
+    val produktMitPreisUndAnzahl: Triple<String, Double, Int> = Triple("Twix", 1.99, 24)
 
     // erster Wert:
     ehePaar.first

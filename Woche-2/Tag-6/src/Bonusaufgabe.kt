@@ -23,6 +23,7 @@ fun main(){
         "Sprite 0.33" to 3.00,
     )
 
+    println(automat.joinToString("\n"))
 
 
 
