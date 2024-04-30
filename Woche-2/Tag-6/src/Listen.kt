@@ -64,7 +64,7 @@ fun main(){
 
     // Liste von Listen
     var hausTiere: List<List<String>> = listOf(
-        listOf("Katze", "Katze"),
+        listOf("Katze", "Katze", "Leguan"),
         listOf("Hund"),
         listOf()
     )
