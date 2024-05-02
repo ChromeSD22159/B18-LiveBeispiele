@@ -11,13 +11,44 @@ fun main(){
         "Haribo Balla Balla" to 2.00
     )
 
+    val automat2: Map<Int, Pair<String, Double>> = mapOf(
+        11 to Pair("Snickers", 1.5),
+        12 to Pair("Milky Way", 2.0),
+        13 to Pair("Milky Way", 2.0)
+    )
+
+
+
+    val addressBuchV1: MutableMap<String, MutableList<String>> = mutableMapOf(
+        "Meik" to mutableListOf(),
+        "David" to mutableListOf("09017832617", "david@bethelem.com")
+    )
+
+    addressBuchV1["David"]?.get(0)
+
+    if (addressBuchV1.contains("David")){
+        val telNr = addressBuchV1["David"]!![0]
+
+    }
+    addressBuchV1["David"] = mutableListOf()
+
+    // Name -> Tel, Email, Addrese
+    val addressBuchV3: Map<String, Triple<String?, String?, String?>> = mapOf(
+        "Safa" to Triple("00876756454", "safa@cool.de", null),
+        "Mary" to Triple(null, "mary@cool.de", "Testweg 123"),
+    )
+    val telNr = addressBuchV3["Test"]?.first
+
+
+//    val haustiere: Map<String, List<Tier>>
+
     // Günstigste Produkt finden:
     val minPreis = automat.values.min()
 
     // Variante 1: .indexOf         -> Nachteil: findet nur 1 günstigstes Produkt
     val indexVonMinPreis = automat.values.indexOf(minPreis)
     val guenstigstesProdukt = automat.keys.elementAt(indexVonMinPreis)
-    println()
+    println("Das günstigste Produkt ist $guenstigstesProdukt ($minPreis€")
 
     // Variante 2:
     val guenstigsteProdukte = automat.filter { it.value == minPreis}.keys
@@ -27,14 +58,14 @@ fun main(){
     val obstLaden: MutableMap<Int, String> = mutableMapOf(
         1 to "Apfel",
         2 to "Banane",
-        20 to "Tomate",
-        21 to "Kartoffel"
+        3 to "Tomate",
+        4 to "Kartoffel"
     )
 
     println(obstLaden)
 
-    obstLaden[22] = "Karotte"
-    obstLaden[21] = "Süßkartoffel"
+    obstLaden[4] = "Süßkartoffel"               // überschreibt altes Paar
+    obstLaden[obstLaden.size + 1] = "Karotte"       // fügt neues Paar ein
 
     println("---")
     println(obstLaden)
@@ -51,6 +82,7 @@ fun main(){
     var twixPreis: Double? = automat["Twix"]        // Werteabfragen in Maps sind potenziell null
 
     println(
+        "Twix kostet ${twixPreis ?: "? €"} \n" +
         "Snickers kostet ${automat["Snickers"]} €" + "\n" +
         "2 Snickers kosten ${2 * automat["Snickers"]!!} €" + // Null-Safety Operator nötig
         "Tequila kostet ${automat["Tequila"]} €" + "\n"
@@ -122,6 +154,7 @@ fun main(){
 
     // V1: ?: Elvis Operator
     var horrorFilmeV1: List<String> = filmGenresV2[genre] ?: listOf()
+    println(horrorFilmeV1)
     println(horrorFilmeV1.random())
 
     // V2: !!   Not-null assertion
