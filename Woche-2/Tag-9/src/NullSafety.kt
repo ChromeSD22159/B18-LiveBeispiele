@@ -6,6 +6,9 @@ fun main(){
         ?: Elvis Operator heißt: "falls der Wert null ist, dann benutze den Default-Wert"
      */
 
+    val preis: Double? = null
+    println("Snickers kostet ${preis ?: "k.a"}")
+
     println("Geben sie ihr Geburtsjahr ein:")
 //    var geburtsJahr: Int? = readln().toInt()      // Fehlerpotenzial
     var geburtsJahr: Int? = readln().toIntOrNull()
