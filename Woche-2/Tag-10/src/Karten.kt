@@ -31,11 +31,32 @@ fun main(){
     var spieler2Karte: String = kartenStapel.removeFirst()
     var spieler3Karte: String = kartenStapel.removeFirst()
 
-//    val spieler1Karten: List<String> = listOf(
-//        kartenStapel.removeFirst(),
-//        kartenStapel.removeFirst(),
-//        kartenStapel.removeFirst()
-//    )
+    val spieler1Karten: MutableList<String> = mutableListOf(
+        kartenStapel.removeFirst(),
+        kartenStapel.removeFirst(),
+        kartenStapel.removeFirst()
+    )
+    // Karte ziehen A (oberste Karte)
+    spieler1Karten.add(kartenStapel.removeFirst())
+
+    // Karte ziehen B (zufallsKarte)
+    var zufallsKarte = kartenStapel.random()
+    kartenStapel.remove(zufallsKarte)
+    spieler1Karten.add(zufallsKarte)
+
+    //
+    zufallsKarte = spieler1Karten.random()
+    spieler1Karten.remove(zufallsKarte)
+
+//    spieler1Karten.removeAt(spieler1Karten.indices.random())
+    var spieler1GesamtPunktzahl: Int = 0
+
+    val ersteKarte = spieler1Karten[0]
+    val punkteErsteKarte = kartenWerte[ersteKarte]!!
+
+    spieler1GesamtPunktzahl += punkteErsteKarte
+
+
 
     // Punkte für Karten
     var spieler1Punkte: Int = kartenWerte[spieler1Karte] ?: 0
