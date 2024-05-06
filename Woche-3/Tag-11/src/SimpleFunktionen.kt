@@ -7,6 +7,8 @@ fun main() {
     randomGreeting()
     randomGreeting()
 
+    endProgram()
+
 //    println("Zähler: $zaehler")
 }
 
@@ -37,3 +39,6 @@ fun randomGreeting() {
     println("$zufallsGruss Welt")
 }
 
+fun endProgram() {
+    println("Danke das Sie hier waren!")
+}

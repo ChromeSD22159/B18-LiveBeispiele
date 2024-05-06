@@ -1,4 +1,4 @@
-import Kartenspiel.cardValues
+import kartenspiel.cardValues
 
 var cards = mutableListOf<String>()
 val player1Cards = mutableListOf<String>()
@@ -26,25 +26,10 @@ fun cardGame() {
     kartenAusteilen()
     kartenAnzeigen()
     punktzahlenBerechnen()
-    punktzahlenAnzeigen()
-}
-
-fun neuerKartenstapel() {
-    cards = mutableListOf(
-        "♥️7", "♦️7", "♠️7", "♣️7",
-        "♥️8", "♦️8", "♠️8", "♣️8",
-        "♥️9", "♦️9", "♠️9", "♣️9",
-        "♥️10", "♦️10", "♠️10", "♣️10",
-        "♥️B", "♦️B", "♠️B", "♣️B",
-        "♥️D", "♦️D", "♠️D", "♣️D",
-        "♥️K", "♦️K", "♠️K", "♣️K",
-        "♥️A", "♦️A", "♠️A", "♣️A",
-        "🃏JOKER"
-    )
 }
 
 fun kartenMischen() {
-    cards.shuffled()
+    cards.shuffle()
 }
 
 fun kartenAusteilen() {
@@ -92,3 +77,17 @@ fun punktzahlenBerechnen() {
     punktzahlenAnzeigen()
 }
 
+
+fun neuerKartenstapel() {
+    cards = mutableListOf(
+        "♥️7", "♦️7", "♠️7", "♣️7",
+        "♥️8", "♦️8", "♠️8", "♣️8",
+        "♥️9", "♦️9", "♠️9", "♣️9",
+        "♥️10", "♦️10", "♠️10", "♣️10",
+        "♥️B", "♦️B", "♠️B", "♣️B",
+        "♥️D", "♦️D", "♠️D", "♣️D",
+        "♥️K", "♦️K", "♠️K", "♣️K",
+        "♥️A", "♦️A", "♠️A", "♣️A",
+        "🃏JOKER"
+    )
+}
