@@ -56,6 +56,8 @@ fun main() {
 
     // Beide Spieler ziehen eine karte
     repeat(3) {
+        // it ist Laufvariable, die den derzeitigen Durchlauf darstellt.
+        println("Durchlauf ${it + 1}")
         println("$player1Name zieht eine Karte...")
         var gezogeneKarte = deck.removeFirst()
         player1Cards.add(gezogeneKarte)
@@ -90,12 +92,11 @@ fun main() {
 
     // Aufgabe 4: Spieler stehlen Gegner-Karte
     val player2Card = player2Cards.random()
+    val player1Card = player1Cards.random()
     player2Cards.remove(player2Card)
     player1Cards.add(player2Card)
 
     println("$player1Name hat die Karte $player2Card von $player2Name gestohlen")
-
-    val player1Card = player1Cards.random()
     println("$player2Name hat die Karte $player1Card von $player1Name gestohlen")
     player1Cards.remove(player1Card)
     player2Cards.add(player1Card)
