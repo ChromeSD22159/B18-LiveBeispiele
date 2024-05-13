@@ -7,6 +7,5 @@ enum class Options {
 
 enum class Alignment {
     BEFORE,
-    AFTER,
-    NONE
+    AFTER
 }
