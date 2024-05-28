@@ -10,6 +10,10 @@ class Person (  // Runde Klammer sind der Konstruktor
     var alter: Int = 0,
 )
 {
+    init {
+        println("Es gibt eine neue Person. Mit Namen: $name")
+    }
+
     // 2 Eigenschaften: Gehalt und Ehepartner
     val kinder: MutableList<Person> = mutableListOf()
     var gehalt: Double = 0.0
@@ -18,6 +22,8 @@ class Person (  // Runde Klammer sind der Konstruktor
     constructor(name: String, alter: Int, gehalt: Double): this(name, alter){
         this.gehalt = gehalt
     }
+
+    constructor(name: String, gehalt: Double): this(name)
 
     fun geburtstag(){
         println("${gelb}Hurra!$reset $name hat heute Geburtstag")
