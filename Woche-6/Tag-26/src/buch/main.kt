@@ -2,7 +2,7 @@ package buch
 
 fun main(){
 
-    val seite2 = Seite("Das ist die zweite Seite...")
+    val seite2: Seite = Seite("Das ist die zweite Seite...")
 
     val buch = Buch(
         listOf(
@@ -10,7 +10,6 @@ fun main(){
             seite2,
             Seite("Eine dritte Seite..."))
     )
-
 
     buch.read()
     println("------")

@@ -1,24 +1,24 @@
 package buch
 
 class Buch (
-    val pages: List<Seite>
+    val alleSeiten: List<Seite>
 ) {
-    var aktuelleSeite = pages.first()
+    var aktuelleSeite = alleSeiten.first()
 
     fun read(){
-        for (seite in pages){
+        for (seite in alleSeiten){
             seite.read()
         }
     }
 
     fun zurueckBlaettern(){
-        val index = pages.indexOf(aktuelleSeite)
-        aktuelleSeite = pages[index - 1]
+        val index = alleSeiten.indexOf(aktuelleSeite)
+        aktuelleSeite = alleSeiten[index - 1]
     }
 
     fun weiterBlaettern(){
-        val index = pages.indexOf(aktuelleSeite)
-        aktuelleSeite = pages[index + 1]
+        val index = alleSeiten.indexOf(aktuelleSeite)
+        aktuelleSeite = alleSeiten[index + 1]
     }
 
 
