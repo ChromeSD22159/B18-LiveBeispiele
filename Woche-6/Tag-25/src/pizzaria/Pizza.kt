@@ -34,10 +34,3 @@ class Pizza (
     }
 
 }
-
-fun main(){
-    val pizza1 = Pizza("Margarita")
-    val pizza2 = Pizza("Tonno")
-    val pizza3 = Pizza("Salame")
-    val pizza4 = Pizza("Margarita")
-}
