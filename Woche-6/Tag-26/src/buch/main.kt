@@ -2,11 +2,13 @@ package buch
 
 fun main(){
 
-    val seite1 = Seite("Das ist die erste Seite...")
     val seite2 = Seite("Das ist die zweite Seite...")
 
     val buch = Buch(
-        listOf(seite1, seite2, Seite("Eine dritte Seite..."))
+        listOf(
+            Seite("Das ist die erste Seite..."),
+            seite2,
+            Seite("Eine dritte Seite..."))
     )
 
 
