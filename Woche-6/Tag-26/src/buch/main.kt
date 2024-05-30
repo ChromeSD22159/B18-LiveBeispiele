@@ -17,7 +17,7 @@ fun main(){
 
     while(true) {
         buch.aktuelleSeite.read()
-        println("Drücken 1 für die vorherige Seite, und 2 für die nächste Seite")
+        println("Drücken sie 1 für die vorherige Seite, und 2 für die nächste Seite")
         when (readln()){
             "1" -> buch.zurueckBlaettern()
             "2" -> buch.weiterBlaettern()
