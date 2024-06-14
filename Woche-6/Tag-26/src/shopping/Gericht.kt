@@ -7,7 +7,9 @@ class Gericht(
     beschreibung: String = "",
 ): Produkt(name, preis, beschreibung) {
 
-
+    override fun ausdrucken() {
+        println("$name ($preis€): $beschreibung")
+    }
 
 
 }
