@@ -68,7 +68,7 @@ Dieser Text wird nur angezeigt wenn ich ihn aufklicke.
 
 ---
 # Bilder
-Man kann auch ein Bilder und andere Medien in sein Readme einbauen:
+Man kann auch Bilder und andere Medien in sein Readme einbauen:
 
 <img src="Woche-9/Tag-40/Guide-to-writting-a-good-readme-file.png" width="300" height="200" title="Beispiel Bild" alt="Dieses Bild ist aus dem Internet geklaut."/>
 ---
